@@ -1,0 +1,25 @@
+print("COVID-19 EXAMINE SURVEY")
+
+ans1 = "yes"
+ans2 = "no"
+Examine = True
+
+while Examine:
+  Q1 = input("Do you have fever? (yes/no) ")
+  Q2 = input("Do you have cough? (yes/no) ")
+  Q3 = input("Do you have difficulty in breathing? (yes/no) ")
+
+  if Q1.casefold() == ans1 or Q2.casefold() == ans1 or Q3.casefold() == ans1:
+    print("You may have COVID-19 symptoms. Please consult a healthcare professional!")
+  else:
+    print("You do not exhibit significant COVID-19 symptoms. Stay safe!")
+
+  ans = input("Do you want to try again to examine? (yes/no) ")
+  if ans.casefold() == "yes":
+    continue 
+  else:
+    break
+    
+    print("Thank you for your time to examine you and stay safe....")
+
+print("Thank you for your time to examine you and stay safe....")
